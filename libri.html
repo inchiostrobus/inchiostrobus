@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Catalogo Libri</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<div class="topbar">
+    <div class="container">Spedizione gratuita sopra 39€ • Pubblica con noi in pochi click</div>
+  </div>
+  <header>
+    <div class="container nav">
+      <a class="brand" href="/">
+        <span class="logo" aria-hidden="true"></span>
+        <span>Inchiostrobus</span>
+      </a>
+      <nav class="menu" aria-label="principale">
+        <a href="/">Home</a>
+        <a href="/libri.html">Libri</a>
+        <a href="/community.html">Community</a>
+        <a href="/concorsi.html">Concorsi</a>
+      </nav>
+        <div class="spacer"></div>
+        <div class="actions">
+            <a class="chip" href="/login.html">Area poeta</a>
+            <button class="hamb" id="hamb" aria-label="Apri menu">☰</button>
+        </div>
+    </div>
+    <div class="mobile" id="mobile">
+      <a href="/">Home</a>
+      <a href="/libri.html">Libri</a>
+      <a href="/community.html">Community</a>
+      <a href="/concorsi.html">Concorsi</a>
+    </div>
+  </header>
+
+
+<!-- Catalogo Libri -->
+<section class="section container" style="min-height: 70vh;">
+<div class="head">
+<h2>Catalogo Libri</h2>
+</div>
+<div class="book-grid">
+<!-- Esempi di libri -->
+<article class="book">
+    <img src="/images/1043-400x600.jpg" alt="Libro 1">
+    <div class="info">
+        <h3 class="title">Il respiro dei versi</h3>
+        <div class="author">di Anna Rossi</div>
+        <div class="price">--Esaurito--</div>
+    </div>
+    <div class="hover">
+        <div>
+            <h3>Il respiro dei versi</h3>
+            <p>Una raccolta di poesie che esplorano i temi dell'amore e della rinascita, con uno stile delicato e profondo.</p>
+        </div>
+    </div>
+</article>
+
+
+<article class="book">
+    <img src="/images/693-400x600.jpg" alt="Libro 2">
+    <div class="info">
+        <h3 class="title">Ombre sul lago</h3>
+        <div class="author">di Luca Bianchi</div>
+        <div class="price">--Esaurito--</div>
+    </div>
+    <div class="hover">
+        <div>
+            <h3>Ombre sul lago</h3>
+            <p>Thriller psicologico ambientato in un piccolo paese di montagna. Un mistero che si intreccia con i segreti della comunità.</p>
+        </div>
+    </div>
+</article>
+
+
+<article class="book">
+    <img src="/images/915-400x600.jpg" alt="Libro 3">
+    <div class="info">
+        <h3 class="title">Sfumature di luce</h3>
+        <div class="author">di Mario Conti</div>
+        <div class="price">--Esaurito--</div>
+    </div>
+    <div class="hover">
+        <div>
+            <h3>Sfumature di luce</h3>
+            <p>Catalogo fotografico che racconta i colori del Mediterraneo, con immagini suggestive e testi evocativi.</p>
+        </div>
+    </div>
+</article>
+
+<article class="book">
+    <img src="/images/787-400x600.jpg" alt="Libro 4">
+    <div class="info">
+        <h3 class="title">Il viaggio infinito</h3>
+        <div class="author">di Paolo Verdi</div>
+        <div class="price">--Esaurito--</div>
+    </div>
+        <div class="hover">
+        <div>
+            <h3>Il viaggio infinito</h3>
+            <p>Una raccolta di poesie volte alla contemplazione della vita e la ricerca sul senso di essa.</p>
+        </div>
+    </div>
+</article>
+</section>
+<footer>
+    <div class="container foot">
+      <div>
+        <div class="brand" style="margin-bottom:8px"><span class="logo"></span><span>Inchiostrobus</span></div>
+        <p>Casa editrice e community per autori e artisti. Diventa uno dei nostri poeti.</p>
+      </div>
+      <div>
+        <h4>Opere</h4>
+        <a href="/libri.html">Libri</a>
+        <a href="/community.html">Community</a>
+      </div>
+      <div>
+        <h4>Poeta</h4>
+        <a href="/concorsi.html">Concorsi</a>
+        <a href="/login.html">Area poeta</a>
+      </div>
+    </div>
+    <div class="container subfoot">© <span id="year"></span> Inchiostrobus. Tutti i diritti riservati.</div>
+</footer>
+  <script src="/script.js"></script>
+</html>

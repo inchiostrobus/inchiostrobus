@@ -1,0 +1,207 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Inchiostrobus</title>
+  <meta name="description" content="Nata da poeti per poeti!" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <div class="topbar">
+    <div class="container">Spedizione gratuita sopra 39€ • Pubblica con noi in pochi click</div>
+  </div>
+  <header>
+    <div class="container nav">
+      <a class="brand" href="/">
+        <span class="logo" aria-hidden="true"></span>
+        <span>Inchiostrobus</span>
+      </a>
+      <nav class="menu" aria-label="principale">
+        <a href="/">Home</a>
+        <a href="/libri.html">Libri</a>
+        <a href="/community.html">Community</a>
+        <a href="/concorsi.html">Concorsi</a>
+      </nav>
+        <div class="spacer"></div>
+        <div class="actions">
+            <a class="chip" href="/login.html">Area poeta</a>
+            <button class="hamb" id="hamb" aria-label="Apri menu">☰</button>
+        </div>
+    </div>
+    <div class="mobile" id="mobile">
+      <a href="/">Home</a>
+      <a href="/libri.html">Libri</a>
+      <a href="/community.html">Community</a>
+      <a href="/concorsi.html">Concorsi</a>
+    </div>
+  </header>
+  <section class="hero">
+    <div class="container wrap">
+      <div>
+        <h1>Nuovo concorso in arrivo</h1>
+        <p>Diventa parte della nostra community di poeti, pubblica le tue opere e vinci il montepremi.</p>
+        <div class="cta">
+          <a class="btn primary" href="/login.html">Partecipa</a>
+        </div>
+      </div>
+      <div class="art">
+        <img src="/images/721-1200x750.jpg" alt="Collage artistico" />
+        <span class="chip pill">In evidenza: Collezione D'Immenso</span>
+      </div>
+    </div>
+  </section>
+  <section class="features">
+    <div class="container grid">
+      <div class="feature"><div class="ic">🚚</div><div><strong>Spedizione veloce</strong><br><span class="muted">24/48 ore in tutta Italia</span></div></div>
+      <div class="feature"><div class="ic">⭐</div><div><strong>Selezione curata</strong><br><span class="muted">Solo titoli e opere scelti</span></div></div>
+      <div class="feature"><div class="ic">🖋️</div><div><strong>Pubblica facile</strong><br><span class="muted">Supporto autori e artisti</span></div></div>
+      <div class="feature"><div class="ic">🔒</div><div><strong>Pagamenti sicuri</strong><br><span class="muted">Carte, PayPal, bonifico</span></div></div>
+    </div>
+  </section>
+
+  <!-- Carousel In evidenza -->
+  <section class="section container">
+    <div class="head">
+      <h2>In evidenza</h2>
+    </div>
+    <div class="carousel" id="carousel">
+      <div class="track" id="track">
+        <article class="slide">
+          <div class="img"><img src="/images/295-1200x800.jpg" alt="Opera 1"/></div>
+          <div class="copy">
+            <h3>Nuovo Concorso: Mi illumino d'immenso</h3>
+            <p>Un viaggio alla ricerca di poesia da contemplare. Diventa uno deegli artisti selezionati.</p>
+            <a class="btn primary" href="/login.html">Partecipa</a>
+          </div>
+        </article>
+        <article class="slide">
+          <div class="img"><img src="/images/330-1200x800.jpg" alt="Opera 2"/></div>
+          <div class="copy">
+            <h3>Nuove uscite in libreria</h3>
+            <p>Poesia, narrativa e fotografia: i titoli della settimana scelti dalla redazione.</p>
+            <a class="btn ghost" href="/libri.html">Scopri i libri</a>
+          </div>
+        </article>
+        <article class="slide">
+          <div class="img"><img src="/images/537-1200x800.jpg" alt="Opera 3" /></div>
+          <div class="copy">
+            <h3>Partecipa alla community</h3>
+            <p>Condividi i tuoi lavori, ricevi feedback e partecipa a contest tematici.</p>
+            <a class="btn primary" href="/community.html">Unisciti ora</a>
+          </div>
+        </article>
+      </div>
+      <div class="controls">
+        <button id="prev" aria-label="Slide precedente">‹</button>
+        <button id="next" aria-label="Slide successiva">›</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Categorie -->
+  <section class="section container">
+    <div class="head">
+      <h2>I numeri di Inchiostrobus</h2>
+    </div>
+    <div class="cards">
+      <!-- 8 cards di esempio -->
+      <article class="card">
+        <div class="thumb"><img src="/images/25-600x450.jpg" alt="Poesia"><span class="badge">Poesia</span></div>
+        <div class="body"><h3 class="title">Versi e raccolte</h3><div class="meta">1.2k titoli</div></div>
+      </article>
+      <article class="card">
+        <div class="thumb"><img src="/images/219-600x450.jpg" alt="Narrativa"><span class="badge">Narrativa</span></div>
+        <div class="body"><h3 class="title">Romanzi e racconti</h3><div class="meta">870 titoli</div></div>
+      </article>
+      <article class="card">
+        <div class="thumb"><img src="/images/277-600x450.jpg" alt="Fotografia"><span class="badge">Fotografia</span></div>
+        <div class="body"><h3 class="title">Album e cataloghi</h3><div class="meta">340 titoli</div></div>
+      </article>
+      <article class="card">
+        <div class="thumb"><img src="/images/290-600x450.jpg" alt="Saggistica"><span class="badge">Saggi</span></div>
+        <div class="body"><h3 class="title">Saggistica</h3><div class="meta">560 titoli</div></div>
+      </article>
+      <article class="card">
+        <div class="thumb"><img src="/images/348-600x450.jpg" alt="Arte"><span class="badge">Arte</span></div>
+        <div class="body"><h3 class="title">Opere pittoriche</h3><div class="meta">1.9k opere</div></div>
+      </article>
+      <article class="card">
+        <div class="thumb"><img src="/images/534-600x450.jpg" alt="Illustrazione"><span class="badge">Illustrazione</span></div>
+        <div class="body"><h3 class="title">Illustrazione</h3><div class="meta">620 opere</div></div>
+      </article>
+      <article class="card">
+        <div class="thumb"><img src="/images/663-600x450.jpg" alt="Rivista"><span class="badge">Rivista</span></div>
+        <div class="body"><h3 class="title">Articoli e interviste</h3><div class="meta">480 post</div></div>
+      </article>
+      <article class="card">
+        <div class="thumb"><img src="/images/921-600x450.jpg" alt="Community"><span class="badge">Community</span></div>
+        <div class="body"><h3 class="title">Eventi e contest</h3><div class="meta">+10k membri</div></div>
+      </article>
+    </div>
+  </section>
+
+  <!-- Banda CTA grande -->
+  <section class="section container">
+    <div class="cta-band">
+      <div>
+        <h3 style="margin:0 0 6px">Pronto a pubblicare il tuo libro o la tua opera?</h3>
+        <div>Servizi editoriali su misura: editing, impaginazione, distribuzione.</div>
+      </div>
+      <a class="btn ghost" href="mailto:info@inchiostrobus.it">Richiedi informazioni</a>
+    </div>
+  </section>
+
+  <!-- Newsletter -->
+  <section class="section container">
+    <div class="news">
+      <div style="display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap;margin-bottom:12px">
+        <h2 style="margin:0">Iscriviti alla newsletter</h2>
+        <span>Novità, eventi e promozioni ogni settimana</span>
+      </div>
+      <form onsubmit="event.preventDefault();alert('Grazie per l\'iscrizione!');top.location.reload()">
+        <input type="email" placeholder="La tua email" required />
+        <button class="btn primary" type="submit">Iscriviti</button>
+      </form>
+    </div>
+  </section>
+  <footer>
+    <div class="container foot">
+      <div>
+        <div class="brand" style="margin-bottom:8px"><span class="logo"></span><span>Inchiostrobus</span></div>
+        <p>Casa editrice e community per autori e artisti. Diventa uno dei nostri poeti.</p>
+      </div>
+      <div>
+        <h4>Opere</h4>
+        <a href="/libri.html">Libri</a>
+        <a href="/community.html">Community</a>
+      </div>
+      <div>
+        <h4>Poeta</h4>
+        <a href="/concorsi.html">Concorsi</a>
+        <a href="/login.html">Area poeta</a>
+      </div>
+    </div>
+    <div class="container subfoot">© <span id="year"></span> Inchiostrobus. Tutti i diritti riservati.</div>
+  </footer>
+  <script src="/script.js"></script>
+  <script>
+    const track = document.getElementById('track');
+    const slides = Array.from(track.children);
+    let index = 0;
+    function go(i){
+      index = (i + slides.length) % slides.length;
+      track.style.transform = `translateX(${-index * 100}%)`;
+    }
+    document.getElementById('prev').addEventListener('click',()=>go(index-1));
+    document.getElementById('next').addEventListener('click',()=>go(index+1));
+    let timer = setInterval(()=>go(index+1), 5000);
+    ['prev','next','carousel'].forEach(id=>{
+      const el = document.getElementById(id) || document.querySelector('.'+id);
+      el?.addEventListener('mouseenter',()=>clearInterval(timer));
+      el?.addEventListener('mouseleave',()=>timer = setInterval(()=>go(index+1), 5000));
+    });
+  </script>
+</body>
+</html>
