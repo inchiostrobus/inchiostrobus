@@ -36,20 +36,29 @@
       <a href="/concorsi.html">Concorsi</a>
     </div>
   </header>
-  <main class="section" style="min-height: 70vh;">
+    <main class="section" style="min-height: 70vh;">
     <div class="container">
+      <div class="card login-card" style="margin-bottom: 2rem;">
+        <h2 class="section-title">Bentornato <span id="un"></span></h2>
+      </div>
+      <h2 style="text-align: center;">Concorsi attivi</h2>
       <div class="card login-card">
-        <h2 class="section-title">Accedi</h2>
-        <form method="post" class="login-form">
+        <h2 class="section-title">Invia la tua opera</h2>
+        <p class="muted-text">Partecipa al concorso <strong>“M'illumino d'immenso”</strong> caricando la tua opera qui sotto.</p>
+        
+        <form method="post" action="/upload-opera" enctype="multipart/form-data" class="login-form">
           <div class="form-group">
-            <input type="text" name="username" id="un" placeholder="Nome utente o email" required />
+            <input type="text" name="titolo" placeholder="Titolo dell'opera" required />
           </div>
           <div class="form-group">
-            <input type="password" name="password" id="pw" placeholder="Password" required />
+            <textarea name="descrizione" rows="4" placeholder="Descrizione breve" required></textarea>
           </div>
-          <button class="ctx" role="button" type="submit">Accedi</button>
+          <div class="form-group">
+            <label class="muted-text">Carica la tua opera (immagine o PDF)</label>
+            <input type="file" name="opera" accept=".jpg,.jpeg,.png,.pdf" required />
+          </div>
+          <button type="submit" class="btn">Invia Opera</button>
         </form>
-        <p class="muted-text">Ogni account è associato al profilo instagram del poeta, per accedere utilizzare le proprie credienzali di instagram.</p>
       </div>
     </div>
   </main>
@@ -75,29 +84,10 @@
   <script src="/script.js"></script>
   <script>
     document.addEventListener("DOMContentLoaded", ()=>{
-      document.querySelector(".login-form").addEventListener("submit",(event)=>{
-        event.preventDefault()
-        login()
-      })
+      let url = new URL(window.location.href)
+      let params = new URLSearchParams(url.search);
+      let un = params.get('un')
+      document.getElementById("un").innerText = un
     })
-    function login(){
-      let un = document.getElementById("un").value
-      let pw = document.getElementById("pw").value
-      if(un && pw){
-        fetch("https://www.r6-irl.it/db/api/pw",
-        {
-            headers: {
-              'Accept': 'application/json',
-              'Content-Type': 'application/json'
-            },
-            method: "POST",
-            body: JSON.stringify({un: un, pw: pw})
-        })
-        .then(function(res){ top.location.href = "/area-poeta.html?un="+un })
-        .catch(function(res){ console.log(res) })
-
-      }
-      return false;
-    }
   </script>
 </html>
