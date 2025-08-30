@@ -42,6 +42,8 @@
     .actions{display:flex;gap:10px;align-items:center}
     .hamb{display:none;width:42px;height:42px;border-radius:12px;border:1px solid rgba(255,255,255,.12);align-items:center;justify-content:center;background:#fff}
 
+    @media(max-width:500px){.brand span:not(.logo){display: none;}}
+
     /* Mobile menu */
     .mobile{display:none;background:var(--bg);position: fixed;width: 100%;left:0;top:0;height: 100vh;}
     .mobile a{display:block;padding:14px 20px;border-top:1px solid rgba(255,255,255,.06);color:#dfe4ee}
